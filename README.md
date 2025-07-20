@@ -31,8 +31,7 @@ This project is built with a **backend-first mindset**—the frontend was *heavi
 * [Neon](https://neon.com/) - Serverless PostgreSQL (Free Tier)  
 * [PostgreSQL](https://www.postgresql.org/) - Database  
 * [Joi](https://joi.dev/) - Input validation  
-* [Helmet](https://helmetjs.github.io/) - Security middleware  
-* [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) - To enable frontend-backend separation  
+* [Helmet](https://helmetjs.github.io/) - Security middleware   
 
 **Frontend**
 
