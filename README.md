@@ -60,23 +60,6 @@ This project is built with a **backend-first mindset**—the frontend was *heavi
 
 ---
 
-## 📂 Project Structure
-
-```
-├── backend/          # Express.js server
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   └── app.js
-├── frontend/         # Static frontend
-│   ├── index.html
-│   ├── scripts.js
-│   └── styles.css
-└── README.md
-```
-
-
-
 ## 🚀 Getting Started
 
 ### 1️⃣ Backend Setup
