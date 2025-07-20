@@ -1,6 +1,6 @@
 # 🔗 Custom URL Shortener (mvp)
 
-A simple and secure URL shortener service that lets users create their own custom short links (if the name is available), view leaderboards of the most-clicked links, and enjoy a smooth frontend experience.
+A simple URL shortener service made in ExpressJS that lets users create their own custom short links (if the name is available), view leaderboards of the most-clicked links, and enjoy a smooth frontend experience.
 
 This project is built with a **backend-first mindset**—the frontend was *heavily assisted by AI (~80%)* while I focused on building backend.
 
