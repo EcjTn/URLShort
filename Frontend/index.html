@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>URLShort</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-section="leaderboards">Leaderboards</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-section="readme">ReadMe</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-section="add-url">Add URL</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Leaderboards Section -->
+        <section id="leaderboards" class="section active">
+            <div class="container">
+                <h1>Leaderboards</h1>
+                <div class="leaderboard-container">
+                    <div id="loading" class="loading">Loading leaderboard...</div>
+                    <div id="error" class="error hidden">Failed to load leaderboard data</div>
+                    <div id="leaderboard-content" class="leaderboard-content hidden">
+                        <!-- Leaderboard data will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ReadMe Section -->
+        <section id="readme" class="section">
+            <div class="container">
+                <h1>ReadMe</h1>
+                <div class="readme-content">
+                    <div class="readme-card">
+                        <h2>Welcome to URLShort</h2>
+                        <p>A modern URL shortening service that helps you create shorter, more manageable links.</p>
+                        <p>Made by Ecj Taneo</p>
+                        
+                        <h3>Features</h3>
+                        <ul>
+                            <li>🔗 Shorten long URLs with your custom name</li>
+                            <li>📊 View leaderboards of popular links</li>
+                            <li>⚡ Fast and reliable service</li>
+                            <li>📱 Mobile-friendly interface</li>
+                        </ul>
+
+                        <h3>How to Use</h3>
+                        <ol>
+                            <li>Navigate to the "Add URL" section</li>
+                            <li>Enter your long URL in the URL field</li>
+                            <li>Optionally customize your short URL</li>
+                            <li>Click "Shorten" to generate your short link</li>
+                        </ol>
+
+                        <h3>API Information</h3>
+                        <p>This application connects to a local API running on <code>http://127.0.0.1:8000</code></p>
+                        <p>Leaderboard data is fetched from the <code>/leaderboard</code> endpoint.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add URL Section -->
+        <section id="add-url" class="section">
+            <div class="container">
+                <h1>Add URL</h1>
+                <div class="url-form-container">
+                    <div class="url-form-card">
+                        <form id="url-form" class="url-form">
+                            <div class="form-group">
+                                <label for="url-input">URL</label>
+                                <input 
+                                    type="url" 
+                                    id="url-input" 
+                                    name="url" 
+                                    placeholder="https://example.com/very-long-url"
+                                    required
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="shorten-input">Custom Short URL</label>
+                                <input 
+                                    type="text" 
+                                    id="shorten-input" 
+                                    name="shorten" 
+                                    placeholder="my-custom-link"
+                                >
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                Add Shorten URL
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
