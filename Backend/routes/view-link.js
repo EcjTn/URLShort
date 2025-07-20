@@ -1,30 +1,11 @@
 import { Router } from 'express';
 import { getUrlByShort, addClick, showLeaderboard } from '../db/db-queries.js';
-
-
 const router = Router();
-
-
-
-
 
 router.get('/leaderboard', async(req, res, next) => {
     const leaderboard = await showLeaderboard();
     res.json(leaderboard.rows);
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 router.get('/:short', async(req, res) => {
@@ -45,34 +26,5 @@ router.get('/:short', async(req, res) => {
         res.status(500).json({ error: 'Internal Server Error' });
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export default router;
