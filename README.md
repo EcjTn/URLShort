@@ -36,7 +36,7 @@ This project is built with a **backend-first mindset**—the frontend was *heavi
 **Frontend**
 
 * Vanilla JS / HTML / CSS  
-* *80% generated with AI assistance (thanks v0.dev)* 🎨
+* *80% generated with AI assistance (thanks to v0.dev)* 🎨
 
 ---
 
