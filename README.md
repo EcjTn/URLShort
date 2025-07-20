@@ -2,7 +2,7 @@
 
 A simple URL shortener service made in ExpressJS that lets users create their own custom short links (if the name is available), view leaderboards of the most-clicked links, and enjoy a smooth frontend experience.
 
-This project is built with a **backend-first mindset**—the frontend was *heavily assisted by AI (~80%)* while I focused on building backend.
+This project is built with a **backend-first mindset**,,the frontend was *heavily assisted by AI (~80%)* while I focused on building backend.
 
 ---
 
