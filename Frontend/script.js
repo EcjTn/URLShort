@@ -176,7 +176,8 @@ class URLShortenerApp {
         try {
             const requestBody = {
                 url: formData.url,
-                shorten_url: formData.shorten
+                shorten_url: formData.shorten,
+                recaptchaResponse: grecaptcha.getResponse() // Get reCAPTCHA response
             };
 
             const response = await fetch('http://127.0.0.1:8000/api/shorten', {
@@ -262,7 +263,7 @@ class URLShortenerApp {
 
         errorContainer.innerHTML = `
             <div style="font-weight: 600; margin-bottom: 0.5rem;">❌ Error</div>
-            <div><p>Something went wrong. Make sure you have a valid URL and a unique Custom URL</p></div>
+            <div><p>Make sure you have a unique Custom URL or finished captcha</p></div>
         `;
 
         // Auto-hide after 5 seconds
