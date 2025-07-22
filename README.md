@@ -58,7 +58,7 @@ This project is built with a **backend-first mindset**,,the frontend was *heavil
 </p>
 
 <p align="center">
-  <img src="./imgs/ur-envs.png" width="600" alt="Screenshot 5" />
+  <img src="./imgs/ur-envs.PNG" width="600" alt="Screenshot 5" />
 </p>
 
 ---
