@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reCAPTCHA POST Example</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <h1>Verify reCAPTCHA</h1>
+
+    <form id="captchaForm">
+        <div class="g-recaptcha" data-sitekey="6LcQOIkrAAAAADp3np6ydBurp6JfjwWOHaIHlicE"></div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('captchaForm').addEventListener('submit', async (e) => {
+            e.preventDefault(); // Stop form from reloading page
+
+            const token = grecaptcha.getResponse();
+            if (!token) {
+                alert('Please complete the reCAPTCHA.');
+                return;
+            }
+
+            try {
+                const response = await fetch('http://127.0.0.1:8000/recaptcha', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ captcha: token })
+                });
+
+                const data = await response.text(); // or .json() if server responds with JSON
+                document.getElementById('result').innerText = `Server response: ${data}`;
+            } catch (err) {
+                console.error(err);
+                document.getElementById('result').innerText = 'Error contacting server.';
+            }
+        });
+    </script>
+</body>
+</html>
