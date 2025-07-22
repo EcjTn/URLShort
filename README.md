@@ -75,14 +75,9 @@ Make sure Neon DB is configured properly. Create the necessary tables with the p
 
 ```bash
 cd frontend
-# Open index.html directly in your browser
+# Open with LiveServer/port 5500
 ```
 
-Or serve with a simple HTTP server:
-
-```bash
-npx serve
-```
 
 ---
 
