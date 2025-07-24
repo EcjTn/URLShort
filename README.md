@@ -89,7 +89,6 @@ cd frontend
 
 * No authentication means anyone can use it—designed for quick, frictionless URL shortening.
 * The frontend is kept minimal since the focus was on backend logic and API design.
-* Will add reCaptcha if serious about this
 
 ---
 
