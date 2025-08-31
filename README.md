@@ -79,9 +79,9 @@ Make sure Neon DB is configured properly. Create the necessary tables with the p
 
 ```bash
 cd frontend
+
 # Open with LiveServer/port 5500
 ```
-
 
 ---
 
