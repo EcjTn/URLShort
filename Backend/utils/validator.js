@@ -3,7 +3,8 @@ import Joi from "joi";
 
 const urlSchema = Joi.object({
     url: Joi.string().uri().required(),
-    shorten_url: Joi.string().required()
+    shorten_url: Joi.string().required(),
+    recaptchaResponse: Joi.string().required()
 })
 
 

@@ -57,6 +57,10 @@ This project is built with a **backend-first mindset**,,the frontend was *heavil
   <img src="./imgs/neondb.png" width="600" alt="Screenshot 4" />
 </p>
 
+<p align="center">
+  <img src="./imgs/ur-envs.PNG" width="600" alt="Screenshot 5" />
+</p>
+
 ---
 
 ## 🚀 Getting Started
@@ -75,11 +79,9 @@ Make sure Neon DB is configured properly. Create the necessary tables with the p
 
 ```bash
 cd frontend
-# Open with live server/port 5500
+
+# Open with LiveServer/port 5500
 ```
-
-
-
 
 ---
 
@@ -87,7 +89,6 @@ cd frontend
 
 * No authentication means anyone can use it—designed for quick, frictionless URL shortening.
 * The frontend is kept minimal since the focus was on backend logic and API design.
-* Will add reCaptcha if serious about this
 
 ---
 
