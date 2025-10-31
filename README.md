@@ -69,7 +69,7 @@ This project is built with a **backend-first mindset**,,the frontend was *heavil
 
 ```bash
 cd backend
-npm i express cors dotenv joi helmet pg express-rate-limit cookie-parser
+npm install
 node --watch app
 ```
 
